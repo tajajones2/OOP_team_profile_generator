@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/tajajones2/OOP_team_profile_generator/issues"
   },
-  "homepage": "https://github.com/tajajones2/OOP_team_profile_generator#readme"
+  "homepage": "https://github.com/tajajones2/OOP_team_profile_generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
 }
