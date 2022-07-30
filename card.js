@@ -34,7 +34,7 @@ function gernerateEngineerCard (name,id,email,gitHub)
   </div>`
 }
 
-function gernerateInternCard (name, id, email,school)
+function gernerateInternCard (name,id,email,school)
 {
     return `
     <div class="card p-3 m-3" style="width: 18rem;">
@@ -51,3 +51,7 @@ function gernerateInternCard (name, id, email,school)
     
   </div>`
 }
+
+module.exports = {gernerateEngineerCard, gernerateInternCard, gernerateManagerCard}
+
+// using {} when creating module exports for mutiple functions
