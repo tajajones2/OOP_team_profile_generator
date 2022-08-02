@@ -5,7 +5,7 @@ describe("Employee", () => {
       it("test all properties", () => {
         const employee = new Employee("Taja", "7", "taja@taja.com");
   
-        expect(employee.employeeName).toEqual("Taja");
+        expect(employee.name).toEqual("Taja");
         expect(employee.id).toEqual("7");
         expect(employee.email).toEqual("taja@taja.com");
       });

@@ -56,4 +56,4 @@ function indexHTML (cards){
   
   
   
-  module.exports=indexHTML
+  module.exports = indexHTML

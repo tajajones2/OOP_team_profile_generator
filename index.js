@@ -3,21 +3,24 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 
 const Manager = require("./lib/manager");
-const Engineer = require("./lib/engineer")
-const Intern = require("./lib/intern")
+const Engineer = require("./lib/engineer");
+const Intern = require("./lib/intern");
 
-// please import Engineer and Intern libraries
+// please import Engineer and Intern libraries // check
 
 const indexHTML = require("./src/indexHTML");
 
-const manageCard = require("./src/managerHtml");
-const indexHTML = require("./src/indexHTML");
+const card = require("./card");
 
-//import engineer and intern cards same as manager card above
 
-// you must create engineer and intern questions separately
+
+
+//import engineer and intern cards same as manager card above //check
+
+// you must create engineer and intern questions separately // check
 
 const employeeArray = [];
+const cardHolder = [];
 
 const managerQuestions = [
   {
@@ -85,6 +88,41 @@ const engineerQuestions = [
 
     name: "engineerrOfficeNumber",
   },
+];
+
+const internQuestions = [
+  {
+    type: "input",
+
+    message: "What is the Intern's name?",
+
+    name: "internName",
+  },
+
+  {
+    type: "input",
+
+    message: "What is the Intern's id?",
+
+    name: "internId",
+  },
+
+  {
+    type: "input",
+
+    message: "What is the Intern's email?",
+
+    name: "internEmail",
+  },
+
+  {
+    type: "input",
+
+    message: "What is the Intern's School?",
+
+    name: "internSchool",
+  },
+
 ];
 
 function init() {
