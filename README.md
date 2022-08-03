@@ -2,12 +2,12 @@
 
 ## Description
 
+As a manager we wanted to create a webpage that displays our teams basic information for profiles. This will provide a qucik and esay way to access emails and GitHub profiles.
+
 This project will demonstrate creating an application that takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each team member using a Node.js command-line.
 
 
 ## Table of Contents (Optional)
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -16,17 +16,24 @@ If your README is long, add a table of contents to make it easy for users to fin
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+Steps for installation:
+
+1. Download Repository 
+2. Install "nodejs" from https://nodejs.org/en/download/
+3. While in terminal under the reposirtory directory run the "npm i" command
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+- When given a command-line, application accepts user input.
+- When prompted for team members and their information an HTML file is generated that displays a nicely formatted team roster based on user input.
+- When the application is started you are then prompted to enter the team manager’s name, employee ID, email address, and office number.
+- When the team manager’s name, employee ID, email address, and office number are entered you are then presented with a menu with the option to add an engineer or an intern or to finish building my team.
+- When the engineer option i selected you are then prompted to enter the engineer’s name, ID, email, and GitHub username, and taken back to the menu.
+When the intern option is selcted
+you are then prompted to enter the intern’s name, ID, email, and school, and I am taken back to the menu.
+- When the team building is finished you can then exit the application, and the HTML is generated.
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+![screenshot](./images/team%20profile.png)
 
 ## Credits
 
@@ -44,9 +51,11 @@ The last section of a high-quality README file is the license. This lets other d
 
 🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
 
-## Badges
 
-![screenshot](./images/team%20profile.png)
+
+
+
+## Badges
 
 Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
 

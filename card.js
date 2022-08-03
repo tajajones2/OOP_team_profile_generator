@@ -9,7 +9,7 @@ function gernerateManagerCard ({name,id,email,officeNumber})
     </div>
     <ul class="list-group list-group-flush">
       <li class="list-group-item">ID: ${id}</li>
-      <li class="list-group-item">Email: ${email}</li>
+      <li class="list-group-item">Email: <a href="mailto:${email}">${email}<a></li>
       <li class="list-group-item">Office Number: ${officeNumber}</li>
     </ul>
     
@@ -27,8 +27,8 @@ function gernerateEngineerCard ({name,id,email,gitHub})
     </div>
     <ul class="list-group list-group-flush">
       <li class="list-group-item">ID: ${id}</li>
-      <li class="list-group-item">Email: ${email}</li>
-      <li class="list-group-item">GitHub: ${gitHub}</li>
+      <li class="list-group-item">Email: <a href="mailto:${email}">${email}<a></li>
+      <li class="list-group-item">GitHub: <a href="https://github.com/${gitHub}" target="_blank">${gitHub}<a></li>
     </ul>
     
   </div>`
@@ -45,7 +45,7 @@ function gernerateInternCard ({name,id,email,school})
     </div>
     <ul class="list-group list-group-flush">
       <li class="list-group-item">ID: ${id}</li>
-      <li class="list-group-item">Email: ${email}</li>
+      <li class="list-group-item">Email: <a href="mailto:${email}">${email}<a></li>
       <li class="list-group-item">School: ${school}</li>
     </ul>
     
