@@ -1,4 +1,4 @@
-function gernerateManagerCard (name,id,email,officeNumber) 
+function gernerateManagerCard ({name,id,email,officeNumber}) 
 { 
     return `
     <div class="card p-3 m-3" style="width: 18rem;">
@@ -16,7 +16,7 @@ function gernerateManagerCard (name,id,email,officeNumber)
   </div>`
 }
 
-function gernerateEngineerCard (name,id,email,gitHub)
+function gernerateEngineerCard ({name,id,email,gitHub})
 {
     return `
     <div class="card p-3 m-3" style="width: 18rem;">
@@ -34,7 +34,7 @@ function gernerateEngineerCard (name,id,email,gitHub)
   </div>`
 }
 
-function gernerateInternCard (name,id,email,school)
+function gernerateInternCard ({name,id,email,school})
 {
     return `
     <div class="card p-3 m-3" style="width: 18rem;">

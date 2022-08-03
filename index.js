@@ -10,13 +10,9 @@ const Intern = require("./lib/intern");
 
 const indexHTML = require("./src/indexHTML");
 
-const card = require("./card");
+const {gernerateEngineerCard, gernerateInternCard, gernerateManagerCard} = require("./card");
 
-
-
-
-//import engineer and intern cards same as manager card above //check
-
+// import engineer and intern cards same as manager card above //check
 // you must create engineer and intern questions separately // check
 
 const employeeArray = [];
@@ -86,7 +82,7 @@ const engineerQuestions = [
 
     message: "What is the engineer's github?",
 
-    name: "engineerrOfficeNumber",
+    name: "engineerGitHub",
   },
 ];
 
@@ -147,6 +143,8 @@ function init() {
     });
 }
 
+// pull next response 
+
 function confirmNext() {
   inquirer
     .prompt([
@@ -198,6 +196,17 @@ function addEngineer() {
     .prompt(engineerQuestions)
 
     .then((response) => {
+      const engineer = new Engineer(
+        response.engineerName,
+
+        response.engineerId,
+
+        response.engineerEmail,
+
+        response.engineerGitHub,
+      );
+
+      employeeArray.push(engineer);
       // create new instance engineer and add it to the employeeArray using push
 
       confirmNext();
@@ -206,10 +215,27 @@ function addEngineer() {
 
 function addIntern() {
   //ask questions about intern using inquirer
+  inquirer
+    .prompt(internQuestions)
+
+    .then((response) => {
+      const intern = new Intern(
+        response.internName,
+
+        response.internId,
+
+        response.internEmail,
+
+        response.internSchool,
+    );
+
+    employeeArray.push(intern);
+
+    confirmNext();
+  }); 
 
   // create new instance intern and add it to the employeeArray using push
 
-  confirmNext();
 }
 
 function createHTML() {
@@ -219,11 +245,11 @@ function createHTML() {
 
   for (let i = 0; i < employeeArray.length; i++) {
     if (employeeArray[i].getRole() === "Manager") {
-      cards = cards + manageCard(employeeArray[i]);
+      cards = cards + gernerateManagerCard(employeeArray[i]);
     } else if (employeeArray[i].getRole() === "Engineer") {
-      //same as manager card but for Enineer card
+      cards = cards + gernerateEngineerCard(employeeArray[i]);
     } else {
-      //same as manager card but for  intern card
+      cards = cards + gernerateInternCard(employeeArray[i]);
     }
   }
 
