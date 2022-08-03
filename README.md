@@ -26,8 +26,8 @@ Steps for installation:
 
 - When given a command-line, application accepts user input.
 - When prompted for team members and their information an HTML file is generated that displays a nicely formatted team roster based on user input.
-- When you click on an email address in the HTML then your default email program opens and populates the TO field of the email with the address
-- When you click on the GitHub username then that GitHub profile opens in a new tab
+- When you click on an email address in the HTML then your default email program opens and populates the TO field of the email with the address.
+- When you click on the GitHub username then that GitHub profile opens in a new tab.
 - When the application is started you are then prompted to enter the team manager’s name, employee ID, email address, and office number.
 - When the team manager’s name, employee ID, email address, and office number are entered you are then presented with a menu with the option to add an engineer or an intern or to finish building my team.
 - When the engineer option i selected you are then prompted to enter the engineer’s name, ID, email, and GitHub username, and taken back to the menu.
@@ -36,6 +36,9 @@ you are then prompted to enter the intern’s name, ID, email, and school, and I
 - When the team building is finished you can then exit the application, and the HTML is generated.
 
 ![screenshot](./images/team%20profile.png)
+
+## Demonstration
+[DEMO](https://drive.google.com/file/d/1Y0r2urBoSl5lvxyxJZTbwz6g2nLe0Jo3/view)
 
 ## Credits
 
